@@ -1,5 +1,5 @@
 # Food Recipe
-It is a web app made using ReactJS and a very cool API by https://www.edamam.com/
+It is a web app made using ReactJS and external API
 <br/>
 
 #### Right now , it only works for the searches
