@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Recipe from "./Recipe";
-
 import "./App.css";
 
 const App = () => {
@@ -21,6 +20,7 @@ const App = () => {
     const response = await fetch(exampleRed);
     const data = await response.json();
     setRecipes(data.hits);
+    console.log(data.hits);
   };
 
   const updateSearch = (e) => {
@@ -33,9 +33,9 @@ const App = () => {
     setSearch("");
   };
 
-  const capitalize = (word) =>{
+  const capitalize = (word) => {
     return word.charAt(0).toUpperCase() + word.slice(1);
-  }
+  };
 
   return (
     <div className="App">
@@ -50,15 +50,18 @@ const App = () => {
           Search
         </button>
       </form>
-      <h1>{capitalize(Query)} Recipes</h1>
-      {Recipes.map((recipe) => (
-        <Recipe
-          key={recipe.recipe.label}
-          title={recipe.recipe.label}
-          calories={recipe.recipe.calories}
-          image={recipe.recipe.image}
-        />
-      ))}
+      <h1 className = "heading" >{capitalize(Query)} Recipes</h1>
+      <div className="recipes">
+        {Recipes.map((recipe) => (
+          <Recipe
+            key={recipe.recipe.label}
+            title={recipe.recipe.label}
+            calories={recipe.recipe.calories}
+            image={recipe.recipe.image}
+            ingredients={recipe.recipe.ingredients}
+          />
+        ))}
+      </div>
     </div>
   );
 };
