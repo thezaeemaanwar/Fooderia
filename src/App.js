@@ -36,7 +36,6 @@ const App = () => {
     setSearch(e.target.value);
   };
 
-
   // Get the value of Search when a complete word is entered
   const getSearch = (e) => {
     e.preventDefault();
@@ -44,9 +43,10 @@ const App = () => {
     setHealth(document.getElementById("health").value);
     setDiet(document.getElementById("diet").value);
     setSearch("");
-    window.location = '#recipe';
+    window.location = "#recipe";
   };
 
+  // Capitalize the first letter of word
   const capitalize = (word) => {
     return word.charAt(0).toUpperCase() + word.slice(1);
   };
@@ -58,32 +58,35 @@ const App = () => {
         Get the recipes of your favorite foods Type in the Search bar what you
         want to make alongwith the calories and food-type{" "}
       </h3>
-      <form onSubmit={getSearch} className="search-form">
-        <select className="dropdown" id="health">
-          <option value="alcohol-free">Alcohol Free</option>
-          <option value="tree-nut-free">Tree Nut free</option>
-          <option value="peanut-free">Peanut Free</option>
-          <option value="sugar-conscious">Sugar Conscious</option>
-          <option value="vegan">Vegan</option>
-          <option value="vegetarian"> Vegetarian</option>
-        </select>
-        <select className="dropdown" id="diet">
-          <option value="balanced">Balanced</option>
-          <option value="high-protein">High Protein</option>
-          <option value="low-carb">Low Crab</option>
-          <option value="low-fat">Low Fat</option>
-        </select>
+      <div className="navbar">
+        <h2 id="logo">fooderia</h2>
+        <form onSubmit={getSearch} className="search-form">
+          <select className="dropdown" id="health">
+            <option value="alcohol-free">Alcohol Free</option>
+            <option value="tree-nut-free">Tree Nut free</option>
+            <option value="peanut-free">Peanut Free</option>
+            <option value="sugar-conscious">Sugar Conscious</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian"> Vegetarian</option>
+          </select>
+          <select className="dropdown" id="diet">
+            <option value="balanced">Balanced</option>
+            <option value="high-protein">High Protein</option>
+            <option value="low-carb">Low Crab</option>
+            <option value="low-fat">Low Fat</option>
+          </select>
 
-        <input
-          className="search-bar"
-          type="text"
-          value={Search}
-          onChange={updateSearch}
-        />
-        <a href="#head" className="search-button" type="submit">
-          View
-        </a>
-      </form>
+          <input
+            className="search-bar"
+            type="text"
+            value={Search}
+            onChange={updateSearch}
+          />
+          <a href="#head" className="search-button" type="submit">
+            View
+          </a>
+        </form>
+      </div>
       <div id="head">
         <h1 className="heading">{capitalize(Query)} Recipes</h1>
         <div className="recipes">
