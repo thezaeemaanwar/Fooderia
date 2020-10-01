@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/thezaeemaanwar.github.io/Fooderia/static/css/main.a9a22ca8.chunk.css",
+    "main.js": "/thezaeemaanwar.github.io/Fooderia/static/js/main.78470f28.chunk.js",
+    "main.js.map": "/thezaeemaanwar.github.io/Fooderia/static/js/main.78470f28.chunk.js.map",
+    "runtime-main.js": "/thezaeemaanwar.github.io/Fooderia/static/js/runtime-main.47943460.js",
+    "runtime-main.js.map": "/thezaeemaanwar.github.io/Fooderia/static/js/runtime-main.47943460.js.map",
+    "static/js/2.b7bffcd9.chunk.js": "/thezaeemaanwar.github.io/Fooderia/static/js/2.b7bffcd9.chunk.js",
+    "static/js/2.b7bffcd9.chunk.js.map": "/thezaeemaanwar.github.io/Fooderia/static/js/2.b7bffcd9.chunk.js.map",
+    "index.html": "/thezaeemaanwar.github.io/Fooderia/index.html",
+    "precache-manifest.2bc1df462a47dc018715bf10f7d54867.js": "/thezaeemaanwar.github.io/Fooderia/precache-manifest.2bc1df462a47dc018715bf10f7d54867.js",
+    "service-worker.js": "/thezaeemaanwar.github.io/Fooderia/service-worker.js",
+    "static/css/main.a9a22ca8.chunk.css.map": "/thezaeemaanwar.github.io/Fooderia/static/css/main.a9a22ca8.chunk.css.map",
+    "static/js/2.b7bffcd9.chunk.js.LICENSE.txt": "/thezaeemaanwar.github.io/Fooderia/static/js/2.b7bffcd9.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/thezaeemaanwar.github.io/Fooderia/static/media/bg.a0bb8995.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47943460.js",
+    "static/js/2.b7bffcd9.chunk.js",
+    "static/css/main.a9a22ca8.chunk.css",
+    "static/js/main.78470f28.chunk.js"
+  ]
+}
