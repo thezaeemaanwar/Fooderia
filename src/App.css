@@ -1,6 +1,6 @@
 .App {
   min-height: 100vh;
-  background: url("./bg.jpg");
+  background: url('./bg.jpg');
   background-attachment: fixed;
   background-size: cover;
   margin-top: 0%;
@@ -75,7 +75,7 @@
 .header {
   margin: 0%;
   padding: 13vh;
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   color: white;
   justify-content: center;
   align-items: center;
@@ -125,16 +125,18 @@
 }
 
 #logo {
-  font-family: "Lobster", cursive;
   float: left;
-  color: white;
   transform: translateX('0');
   position: absolute;
   overflow: hidden;
+  padding-left: 2%;
+}
+#logo > h2 {
+  margin: 10px;
+  color: white;
+  font-family: 'Lobster', cursive;
   font-weight: lighter;
   font-size: 2rem;
-  padding-left: 2%;
-  margin: 10px;
 }
 
 .navbar {
@@ -144,4 +146,13 @@
   position: sticky;
   top: 0%;
   width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  #logo {
+    display: contents;
+    text-align: center;
+  }
+  #logo > h2 {
+    margin: 2%;
+  }
 }
