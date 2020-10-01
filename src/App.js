@@ -24,26 +24,27 @@ const App = () => {
 
   const exampleRed = `https://api.edamam.com/search?q=${Query}&app_id=${APP_ID}&app_key=${APP_KEY}&diet=${Diet}&health=${Health}`;
 
-  // Fetch data from the API and set the state of Recipe to ir
+  // Fetch data from the API and set the state of Recipe
   const getRecepies = async () => {
     const response = await fetch(exampleRed);
     const data = await response.json();
     setRecipes(data.hits);
-    console.log("Health = ", Health);
-    console.log("data = ", data.hits);
   };
 
+  // Update the state Search on every change
   const updateSearch = (e) => {
     setSearch(e.target.value);
   };
 
+
+  // Get the value of Search when a complete word is entered
   const getSearch = (e) => {
     e.preventDefault();
     setQuery(Search);
     setHealth(document.getElementById("health").value);
     setDiet(document.getElementById("diet").value);
-    console.log("Health in getSearch = ", Health);
     setSearch("");
+    window.location = '#recipe';
   };
 
   const capitalize = (word) => {
@@ -79,8 +80,8 @@ const App = () => {
           value={Search}
           onChange={updateSearch}
         />
-        <a href="#head" className="search-button" type="submit ">
-          Search
+        <a href="#head" className="search-button" type="submit">
+          View
         </a>
       </form>
       <div id="head">
