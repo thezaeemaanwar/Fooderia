@@ -64,18 +64,18 @@ const App = () => {
         </div>
         <form onSubmit={getSearch} className='search-form'>
           <select className='dropdown' id='health'>
-            <option value='alcohol-free'>Alcohol Free</option>
-            <option value='tree-nut-free'>Tree Nut free</option>
-            <option value='peanut-free'>Peanut Free</option>
-            <option value='sugar-conscious'>Sugar Conscious</option>
-            <option value='vegan'>Vegan</option>
-            <option value='vegetarian'> Vegetarian</option>
+            <option value='alcohol-free'> Alcohol Free</option>
+            <option value='tree-nut-free'> Tree Nut free </option>
+            <option value='peanut-free'> Peanut Free </option>
+            <option value='sugar-conscious'> Sugar Conscious </option>
+            <option value='vegan'> Vegan </option>
+            <option value='vegetarian'> Vegetarian </option>
           </select>
           <select className='dropdown' id='diet'>
-            <option value='balanced'>Balanced</option>
-            <option value='high-protein'>High Protein</option>
-            <option value='low-carb'>Low Crab</option>
-            <option value='low-fat'>Low Fat</option>
+            <option value='balanced'> Balanced </option>
+            <option value='high-protein'> High Protein </option>
+            <option value='low-carb'> Low Carb </option>
+            <option value='low-fat'> Low Fat </option>
           </select>
 
           <input
