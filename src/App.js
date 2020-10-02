@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from "react";
-import Recipe from "./Recipe";
-import "./App.css";
+import React, { useEffect, useState } from 'react';
+import Recipe from './Recipe';
+import './App.css';
 
 const App = () => {
-  const APP_ID = "23b19a81";
-  const APP_KEY = "10d454b3c2543dcdf8e1858b3e1b8f51";
+  const APP_ID = '23b19a81';
+  const APP_KEY = '10d454b3c2543dcdf8e1858b3e1b8f51';
 
   // The Recepies Fetched
   const [Recipes, setRecipes] = useState([]);
   // The value tyoed in search
-  const [Search, setSearch] = useState("");
+  const [Search, setSearch] = useState('');
   // Complete Search
-  const [Query, setQuery] = useState("");
+  const [Query, setQuery] = useState('');
   // Health Type
-  const [Health, setHealth] = useState("alcohol-free");
+  const [Health, setHealth] = useState('alcohol-free');
   // Diet Type
-  const [Diet, setDiet] = useState("balanced");
+  const [Diet, setDiet] = useState('balanced');
 
   // The rendering function
   useEffect(() => {
@@ -40,10 +40,10 @@ const App = () => {
   const getSearch = (e) => {
     e.preventDefault();
     setQuery(Search);
-    setHealth(document.getElementById("health").value);
-    setDiet(document.getElementById("diet").value);
-    setSearch("");
-    window.location = "#recipe";
+    setHealth(document.getElementById('health').value);
+    setDiet(document.getElementById('diet').value);
+    setSearch('');
+    window.location = '#recipe';
   };
 
   // Capitalize the first letter of word
@@ -52,44 +52,46 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <h1 className="header">Welcome to fooderia</h1>
-      <h3 className="description">
+    <div className='App'>
+      <h1 className='header'>Welcome to fooderia</h1>
+      <h3 className='description'>
         Get the recipes of your favorite foods Type in the Search bar what you
-        want to make alongwith the calories and food-type{" "}
+        want to make alongwith the calories and food-type{' '}
       </h3>
-      <div className="navbar">
-        <h2 id="logo">fooderia</h2>
-        <form onSubmit={getSearch} className="search-form">
-          <select className="dropdown" id="health">
-            <option value="alcohol-free">Alcohol Free</option>
-            <option value="tree-nut-free">Tree Nut free</option>
-            <option value="peanut-free">Peanut Free</option>
-            <option value="sugar-conscious">Sugar Conscious</option>
-            <option value="vegan">Vegan</option>
-            <option value="vegetarian"> Vegetarian</option>
+      <div className='navbar'>
+        <div id='logo'>
+          <h2>fooderia</h2>
+        </div>
+        <form onSubmit={getSearch} className='search-form'>
+          <select className='dropdown' id='health'>
+            <option value='alcohol-free'>Alcohol Free</option>
+            <option value='tree-nut-free'>Tree Nut free</option>
+            <option value='peanut-free'>Peanut Free</option>
+            <option value='sugar-conscious'>Sugar Conscious</option>
+            <option value='vegan'>Vegan</option>
+            <option value='vegetarian'> Vegetarian</option>
           </select>
-          <select className="dropdown" id="diet">
-            <option value="balanced">Balanced</option>
-            <option value="high-protein">High Protein</option>
-            <option value="low-carb">Low Crab</option>
-            <option value="low-fat">Low Fat</option>
+          <select className='dropdown' id='diet'>
+            <option value='balanced'>Balanced</option>
+            <option value='high-protein'>High Protein</option>
+            <option value='low-carb'>Low Crab</option>
+            <option value='low-fat'>Low Fat</option>
           </select>
 
           <input
-            className="search-bar"
-            type="text"
+            className='search-bar'
+            type='text'
             value={Search}
             onChange={updateSearch}
           />
-          <a href="#head" className="search-button" type="submit">
+          <a href='#head' className='search-button' type='submit'>
             View
           </a>
         </form>
       </div>
-      <div id="head">
-        <h1 className="heading">{capitalize(Query)} Recipes</h1>
-        <div className="recipes">
+      <div id='head'>
+        <h1 className='heading'>{capitalize(Query)} Recipes</h1>
+        <div className='recipes'>
           {Recipes.map((recipe) => (
             <Recipe
               key={Recipes.indexOf(recipe)}
