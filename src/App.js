@@ -94,7 +94,7 @@ const App = () => {
             <Recipe
               key={Recipes.indexOf(recipe)}
               title={recipe.recipe.label}
-              calories={recipe.recipe.calories}
+              calories={recipe.recipe.calories.toFixed(5)}
               image={recipe.recipe.image}
               ingredients={recipe.recipe.ingredients}
             />
