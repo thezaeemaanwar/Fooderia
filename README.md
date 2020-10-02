@@ -6,3 +6,7 @@ It is a web app made using ReactJS and external API
 For Example : If you search for banana, it would show you the recipes of banana
 
 <a href = "https://thezaeemaanwar.github.io/Fooderia/">Homepage</a>
+
+### Clone this Repository `git clone https://github.com/thezaeemaanwar/Fooderia.git`
+### `npm install`
+### `npm start`
