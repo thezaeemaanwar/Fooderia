@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Fooderia/static/css/main.9035b39b.chunk.css",
-    "main.js": "/Fooderia/static/js/main.933c24ca.chunk.js",
-    "main.js.map": "/Fooderia/static/js/main.933c24ca.chunk.js.map",
+    "main.css": "/Fooderia/static/css/main.edbbe768.chunk.css",
+    "main.js": "/Fooderia/static/js/main.05a0dc53.chunk.js",
+    "main.js.map": "/Fooderia/static/js/main.05a0dc53.chunk.js.map",
     "runtime-main.js": "/Fooderia/static/js/runtime-main.b968e461.js",
     "runtime-main.js.map": "/Fooderia/static/js/runtime-main.b968e461.js.map",
     "static/js/2.b7bffcd9.chunk.js": "/Fooderia/static/js/2.b7bffcd9.chunk.js",
     "static/js/2.b7bffcd9.chunk.js.map": "/Fooderia/static/js/2.b7bffcd9.chunk.js.map",
     "index.html": "/Fooderia/index.html",
-    "precache-manifest.1618692b3729009df0d368ebce359187.js": "/Fooderia/precache-manifest.1618692b3729009df0d368ebce359187.js",
+    "precache-manifest.7b39e7864c007633ef9e1b8e0484be02.js": "/Fooderia/precache-manifest.7b39e7864c007633ef9e1b8e0484be02.js",
     "service-worker.js": "/Fooderia/service-worker.js",
-    "static/css/main.9035b39b.chunk.css.map": "/Fooderia/static/css/main.9035b39b.chunk.css.map",
+    "static/css/main.edbbe768.chunk.css.map": "/Fooderia/static/css/main.edbbe768.chunk.css.map",
     "static/js/2.b7bffcd9.chunk.js.LICENSE.txt": "/Fooderia/static/js/2.b7bffcd9.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Fooderia/static/media/bg.a0bb8995.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b968e461.js",
     "static/js/2.b7bffcd9.chunk.js",
-    "static/css/main.9035b39b.chunk.css",
-    "static/js/main.933c24ca.chunk.js"
+    "static/css/main.edbbe768.chunk.css",
+    "static/js/main.05a0dc53.chunk.js"
   ]
 }

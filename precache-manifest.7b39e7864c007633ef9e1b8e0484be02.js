@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bdc577ef3afc090b8f98db9428a6cb8f",
+    "revision": "4b43656f65e32e75ba35fd5c1879f12a",
     "url": "/Fooderia/index.html"
   },
   {
-    "revision": "f59b3257fa8889fa2e97",
-    "url": "/Fooderia/static/css/main.9035b39b.chunk.css"
+    "revision": "7d8b6e3d9189647ac78d",
+    "url": "/Fooderia/static/css/main.edbbe768.chunk.css"
   },
   {
     "revision": "4d605e5a8f262afd0ba7",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fooderia/static/js/2.b7bffcd9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f59b3257fa8889fa2e97",
-    "url": "/Fooderia/static/js/main.933c24ca.chunk.js"
+    "revision": "7d8b6e3d9189647ac78d",
+    "url": "/Fooderia/static/js/main.05a0dc53.chunk.js"
   },
   {
     "revision": "d17f8c932325b6f04a1f",

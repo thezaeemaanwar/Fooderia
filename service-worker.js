@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Fooderia/precache-manifest.1618692b3729009df0d368ebce359187.js"
+  "/Fooderia/precache-manifest.7b39e7864c007633ef9e1b8e0484be02.js"
 );
 
 self.addEventListener('message', (event) => {
